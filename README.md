@@ -7,10 +7,10 @@ Unix System Icon Librarian
 Using the "iconset.sh" script inside
 
 ## How to run a script
-
+```
 > sh iconset.sh $PATH_PNG
 > ./iconset.sh $PATH_PNG
-
+```
 ## Example
 
 ```
