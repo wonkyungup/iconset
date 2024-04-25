@@ -37,10 +37,6 @@ sips -z 512 512   "$icon_path" --out icon.iconset/icon_256x256@2x.png
 sips -z 512 512   "$icon_path" --out icon.iconset/icon_512x512.png
 cp "$icon_path" icon.iconset/icon_512x512@2x.png
 iconutil -c icns icon.iconset
-
-# Create .ico file from .icns
-sips -s format bmp icon.iconset/icon_512x512@2x.png --out icon.ico
-iconutil -c icns icon.iconset
 rm -R icon.iconset
 
-echo "Icon files created: ${icon_file}.icns, ${icon_file}.ico"
+echo "Icon created: ${icon_file}.icns"
